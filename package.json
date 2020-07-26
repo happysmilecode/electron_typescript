@@ -10,7 +10,7 @@
     "start": "brunch watch",
     "build": "brunch build --production",
     "test": "tsc --noEmit",
-    "preinstall": "./configure-local-plugin"
+    "preinstall": "npm link --save electron-builder-brunch"
   },
   "dependencies": {
     "electron": "^9.1.1",
