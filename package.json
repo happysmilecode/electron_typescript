@@ -6,7 +6,9 @@
   "version": "0.0.1",
   "repository": "",
   "scripts": {
-    "electron": "tsc --outFile public/main.js app/process/main.ts; electron public/main.js",
+    "electron:compile": "tsc --outFile public/main.js app/process/main.ts",
+    "electron:run": "electron public/main.js",
+    "electron": "npm run electron:compile; npm run electron:run",
     "start": "brunch watch",
     "build": "brunch build --production",
     "test": "tsc --noEmit",
@@ -16,6 +18,12 @@
     "electron": "^9.1.1",
     "phaser": "^3.17.0"
   },
+  "keywords": [
+    "brunch",
+    "electron",
+    "typescript",
+    "phaser3"
+  ],
   "devDependencies": {
     "auto-reload-brunch": "^2",
     "brunch": "^2.10.17",
