@@ -2,13 +2,17 @@
 const { exec } = require('child_process');
 const logger = require('loggy');
 
-class ElectronBuilder {
+class ElectronDevBuilder {
 	constructor(config) {
+		this.productionMode = config.optimize
 		logger.notificationsTitle = config.notifications.app || 'Electron builder'
 	}
 
 	onCompile() {
-		logger.log('killing old process')
+		if (this.productionMode) {
+			return
+		}
+		logger.info('killing old process')
 		exec('kill -9 $(ps aux | grep -e \'public/main.js\' | awk \'{print $2}\')')
 		logger.log('restarting')
 		exec('yarn electron')
@@ -16,7 +20,7 @@ class ElectronBuilder {
 }
 
 // Tell Brunch we are indeed a plugin for it
-ElectronBuilder.prototype.brunchPlugin = true;
+ElectronDevBuilder.prototype.brunchPlugin = true;
 
 // The plugin has to be the module’s default export
-module.exports = ElectronBuilder;
+module.exports = ElectronDevBuilder;
