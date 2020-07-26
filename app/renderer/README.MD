@@ -1,0 +1,1 @@
+All source must go here. Entry point is [initialize.ts](initialize.ts)

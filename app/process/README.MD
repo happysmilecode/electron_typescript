@@ -1,0 +1,1 @@
+Here you can configure the Electron processer. For more info, please see [Electron docs](https://www.electronjs.org/docs)

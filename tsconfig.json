@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5"
+  },
+  "files": [
+    "node_modules/phaser/types/phaser.d.ts"
+  ],
+  "include": [
+    "app/**/*.ts",
+    "app/process/main.js"
+  ]
+}
