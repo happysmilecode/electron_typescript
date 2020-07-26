@@ -13,8 +13,9 @@ Get started
   - [Brunch](http://brunch.io): `npm install -g brunch`
 - Run:
   - `brunch new <project> -s delni/brunch-phaser-desktop`
-  - `npm run start` or `brunch watch --server` watches the project with continuous rebuild.
-  - `npm run build` or `brunch build --production` builds a minified project for production.
+  - `npm start` or `yarn start` watches the project with continuous rebuild.
+  - `npm build` or `brunch build --production` builds a minified project for production.  
+    :warning: If you delete the `/public` folder, you should run `electron:compile` script to recompile the main processor
 - Make:
   - Write your code in [app](app).
   - Put game assets in [assets](app/static/assets).
