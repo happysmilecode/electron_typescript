@@ -16,7 +16,6 @@ module.exports =
   npm:
     static: [
       'node_modules/phaser/dist/phaser.js'
-      # 'node_modules/phaser/dist/phaser-arcade-physics.js'
     ]
   plugins:
     brunchTypescript:
@@ -25,4 +24,4 @@ module.exports =
     noPushState: on
   notifications:
     levels: ['error', 'warn', 'info']
-    app: 'TBD'
+    app: 'Phaser Desktop'

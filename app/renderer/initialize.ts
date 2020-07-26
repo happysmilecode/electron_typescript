@@ -1,7 +1,6 @@
 import DefaultScene from './scenes/default';
 
 const game = new Phaser.Game({
-  // See <https://github.com/photonstorm/phaser/blob/master/src/boot/Config.js>
   width: 800,
   height: 600,
   // zoom: 1,
@@ -11,7 +10,7 @@ const game = new Phaser.Game({
   // canvas: null,
   // canvasStyle: null,
   // seed: null,
-  title: 'TBD', // 'My Phaser 3 Game'
+  title: 'Phaser Desktop',
   url: '',
   version: '0.0.1',
   // input: {
@@ -25,7 +24,7 @@ const game = new Phaser.Game({
   banner: {
     // hidePhaser: false,
     // text: 'white',
-    background: ['#e54661', '#ffa644', '#998a2f', '#2c594f', '#002d40']
+    background: ['#ffffff', '#ceccae', '#86ad8a', '#3f894a', '#2c594f']
   },
   // fps: {
   //   min: 10,
