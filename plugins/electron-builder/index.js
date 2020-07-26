@@ -8,9 +8,9 @@ class ElectronBuilder {
 	}
 
 	onCompile() {
-		logger.info('killing old process')
+		logger.log('killing old process')
 		exec('kill -9 $(ps aux | grep -e \'public/main.js\' | awk \'{print $2}\')')
-		logger.info('restarting')
+		logger.log('restarting')
 		exec('yarn electron')
 	}
 }

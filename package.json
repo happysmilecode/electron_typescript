@@ -9,7 +9,8 @@
     "electron": "tsc --outFile public/main.js app/process/main.ts; electron public/main.js",
     "start": "brunch watch",
     "build": "brunch build --production",
-    "test": "tsc --noEmit"
+    "test": "tsc --noEmit",
+    "preinstall": "./configure-local-plugin"
   },
   "dependencies": {
     "electron": "^9.1.1",

@@ -1,0 +1,5 @@
+#!bin/bash
+cd plugins/electron-builder
+npm link
+cd ../../
+npm link electron-builder-brunch
