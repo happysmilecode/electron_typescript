@@ -11,8 +11,7 @@
     "electron": "npm run electron:compile; npm run electron:run",
     "start": "brunch watch",
     "build": "brunch build --production",
-    "test": "tsc --noEmit",
-    "preinstall": "npm link --save electron-builder-brunch"
+    "test": "tsc --noEmit"
   },
   "dependencies": {
     "electron": "^9.1.1",
@@ -29,7 +28,6 @@
     "brunch": "^2.10.17",
     "clean-css-brunch": "^2",
     "css-brunch": "^2",
-    "electron-builder-brunch": "1.0.0",
     "javascript-brunch": "^2",
     "phaser3-docs": "git+https://github.com/photonstorm/phaser3-docs.git",
     "typescript-brunch": "github:niku/typescript-brunch",
