@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "repository": "",
   "scripts": {
-    "start": "concurrently -k -r true \"npm:brunch:w\" \"npm:electron\"",
+    "start": "node ./concurrently-config",
     "electron:compile": "tsc --skipLibCheck --outFile public/main.js app/process/main.ts",
     "electron:run": "electron public/main.js",
     "electron": "npm run electron:compile; npm run electron:run",
