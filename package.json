@@ -15,7 +15,7 @@
     "test": "tsc --noEmit"
   },
   "dependencies": {
-    "electron": "^9.1.1",
+    "electron": "^13.6.6",
     "phaser": "^3.17.0"
   },
   "keywords": [
